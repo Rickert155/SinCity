@@ -11,3 +11,6 @@ check_agent_list(agent_list='file.txt')
 ```
 ## Case
 Тут находятся примеры использования модулей библиотеки
+
+## tmp 
+В этой директории хранятся примеры json и txt для user-agent
