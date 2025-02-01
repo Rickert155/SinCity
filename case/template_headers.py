@@ -1,4 +1,4 @@
-from Sincity.Agent.header import header
+from SinCity.Agent.header import header
 from bs4 import BeautifulSoup
 import requests
 
