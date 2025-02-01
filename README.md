@@ -9,8 +9,16 @@
 ```sh
 check_agent_list(agent_list='file.txt')
 ```
+## Web
+### Whois
+Простой скрипт для проверки whois
+
 ## Case
 Тут находятся примеры использования модулей библиотеки
 
 ## tmp 
 В этой директории хранятся примеры json и txt для user-agent
+
+# LICENSE
+Этот проект распространяется под лицензией [GNU GPLv3](./LICENSE).
+Подробнее: <https://www.gnu.org/licenses/gpl-3.0.html>.
