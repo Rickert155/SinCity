@@ -1,4 +1,11 @@
-cp -r * ../ && cd ..
+mv SinCity ../Sin
+mv tmp ../tmp
+mv __init__.py ../
+mv requirements.txt ../
+cd ..
+rm -r SinCity 
+mv Sin SinCity
+
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
