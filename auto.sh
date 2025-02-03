@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 cp -r SinCity ../Sin
 cp -r case ../case
 cp -r tmp ../tmp
