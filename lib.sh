@@ -1,11 +1,9 @@
-mv SinCity ../Sin
+mv SinCity ../SinCity
 mv tmp ../tmp
 mv case ../case
 mv __init__.py ../
 mv requirements.txt ../
 cd ..
-rm -r SinCity 
-mv Sin SinCity
 
 python3 -m venv venv
 source venv/bin/activate
