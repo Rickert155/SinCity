@@ -1,5 +1,6 @@
 mv SinCity ../Sin
 mv tmp ../tmp
+mv case ../case
 mv __init__.py ../
 mv requirements.txt ../
 cd ..
