@@ -4,6 +4,7 @@ cp -r case ../case
 cp -r tmp ../tmp
 cp __init__.py ../
 cp requirements.txt ../requirements.txt
+cp manifest.py ../manifest.py
 cd ..
 rm -rf SinCity
 mv Sin SinCity
