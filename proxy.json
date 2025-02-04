@@ -1,0 +1,19 @@
+{
+    "http":[
+        "https://api.openproxylist.xyz/http.txt",
+        "https://alexa.lr2b.com/proxylist.txt",
+        "https://rootjazz.com/proxies/proxies.txt",
+        "https://www.proxy-list.download/api/v1/get?type=http",
+        "https://raw.githubusercontent.com/officialputuid/KangProxy/KangProxy/http/http.txt",
+        "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
+        "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
+    ],
+
+    "https":[
+        "https://www.sslproxies.org/",
+        "https://www.proxy-list.download/api/v1/get?type=https",
+        "https://raw.githubusercontent.com/officialputuid/KangProxy/KangProxy/https/https.txt",
+        "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-https.txt"
+    ]
+
+}
