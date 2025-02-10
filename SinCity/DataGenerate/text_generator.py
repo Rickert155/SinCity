@@ -15,6 +15,13 @@ def collected_char():
     
     return list_char
 
+def lower_or_upper(char:str):
+    random_data = random.randint(1, 3)
+    if type(char) == str:
+        
+        if random_data % 2 == 0:char = char.upper()
+        else:char = char.lower()
+    return char
 
 def select_char(alphabet:list):
     char_select = random.randint(0, len(alphabet)-1)
@@ -27,6 +34,7 @@ def generate_data(max_count:int):
     list_of_char = ''
     for generate_char in range(0, max_count):
         generate_char = select_char(alphabet=source_list_chars)
+        generate_char = lower_or_upper(generate_char)
         list_of_char+=str(generate_char)
     
     return list_of_char 
