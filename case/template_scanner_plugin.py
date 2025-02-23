@@ -16,7 +16,6 @@
 #
 # Full text of the GNU General Public License v3.0 is available at:
 # http://www.gnu.org/licenses/gpl-3.0.txt
-from SinCity.Scanners.port_scanner import scanner
+from SinCity.Scanners.scanner_wp_plugin import Scanner
 
-result_scanner = scanner(min_port=5, max_port=90)
-print(result_scanner)
+scanner = Scanner()
