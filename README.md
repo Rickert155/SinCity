@@ -37,6 +37,8 @@ min_port:int=1, max_port=80
 ```
 Если домен не указан - вызывается функция get_domain()
 
+### Scanner WordPress plugins
+
 ## Case
 Тут находятся примеры использования модулей библиотеки
 
