@@ -1,7 +1,7 @@
 # Lib Sin City 
 
 <div align="center">
-  <img src="https://github.com/rickert156/rickert156/blob/main/assets/sin_city.svg" alt="Sin City">
+  <img src="https://github.com/rickert156/rickert156/blob/main/assets/sin_city.jpg" alt="Sin City">
 </div>
 
 ## Agent
