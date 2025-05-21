@@ -18,5 +18,5 @@
 # http://www.gnu.org/licenses/gpl-3.0.txt
 from SinCity.DataGenerate.text_generator import generator 
 
-data = generator(max_count_char=13, max_word=10)
+data = generator(max_count_char=13, max_word=1)
 print(data)

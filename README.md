@@ -1,50 +1,58 @@
-# Lib Sin City 
-
 <div align="center">
   <img src="https://github.com/rickert156/rickert156/blob/main/assets/sin_city.jpg" alt="Sin City">
 </div>
+# Lib Sin City 
+
+Установка библиотеки
+```sh
+git clone https://github.com/rickert156/SinCity.git
+```
+Быстрая установка пакетов + очистка от мусора
+```sh
+cd SinCity && ./auto.sh
+```
 
 ## Agent
-В модуле доступна функция check_agent_list. Функция принимает один обязательный параметр agent_list, в него передается имя файла со списком user-agents:
+С помощью модуля Agent.header можно быстро генерировать заголовки  
+Сначал нужно достать agent.json из tmp
 ```sh
-check_agent_list(agent_list='file.txt')
+cp tmp/agent.json .
 ```
-## Web
-### Whois
-Простой скрипт для проверки whois
+Для примера можно использовать скрипт
+```sh
+python3 -m case.template_headers
+```
 
-## OSINT
-### Debt
-Модуль для поиск долгов по ИНН
+## Browser
+Тут пара модулей - driver_chrome и scrolling  
+Модули для инициализации chrome driver и для скроллинга в низ страницы сайта. Модули добавлены в библиотеку, так как на практике очень часто нужно их использовать.
 
 ## DataGenerate
-### Text Generator
-Модуль для генерированания символов - пока что только из английского алфавита и цифр. Имеет два необязательных параметра:
+По большей части это генератор текста. Используется в менеджере паролей [SinPass](https://github.com/rickert156/SinPass)   
+Пример использования
 ```sh
-#количество символов 
-max_count_char
-#количество итераций
-max_word
-
-#Значения по умолчанию
-max_word:int=1, max_count_char:int=5
+python3 -m case.template_genarate_word
 ```
+
+## OSINT
+Набор модулей для информационной разведки из открытых источников.  
+Проверка долгов по ИНН. Пример
+```
+python3 -m case.template_search_debt
+```
+
+## Web
+Модуль whois относится к OSINT.   
+Пример использования
+```sh
+python3 -m case.template_whois.py
+```
+
 ## Scanners
-### Port Scanner
-Есть два необязательных параметра, значение по умолчанию:
+Модуль с различными сканнерами.
+- Сканнер портов - простейший прототип. Не брать во внимание
+- Сканнер плагинов WordPress - рабочий инструмент, нужно пополнять библиотеку плагинов, что бы инструмент по ним искал. Пример использования
 ```sh
-min_port:int=1, max_port=80
+python3 -m case.template_scanner_plugin
 ```
-Если домен не указан - вызывается функция get_domain()
-
-### Scanner WordPress plugins
-
-## Case
-Тут находятся примеры использования модулей библиотеки
-
-## tmp 
-В этой директории хранятся примеры json и txt для user-agent
-
-# LICENSE
-Этот проект распространяется под лицензией [GNU GPLv3](./LICENSE).
-Подробнее: <https://www.gnu.org/licenses/gpl-3.0.html>.
+Для него нужен файл с плагинами plugins.txt и agent.json(опционально) для улучшения запросов
