@@ -8,5 +8,4 @@ cd ..
 rm -rf SinCity
 mv Sin SinCity
 python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+./venv/bin/pip install -r requirements.txt
