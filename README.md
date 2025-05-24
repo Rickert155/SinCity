@@ -5,7 +5,7 @@
 
 Установка библиотеки
 ```sh
-git clone https://github.com/rickert156/SinCity.git
+git clone https://github.com/Rickert155/SinCity.git
 ```
 Быстрая установка пакетов + очистка от мусора
 ```sh
@@ -20,7 +20,7 @@ cp tmp/agent.json .
 ```
 Для примера можно использовать скрипт
 ```sh
-python3 -m case.template_headers
+python3 -m tests.test_headers
 ```
 
 ## Browser
@@ -31,21 +31,21 @@ python3 -m case.template_headers
 По большей части это генератор текста. Используется в менеджере паролей [SinPass](https://github.com/rickert156/SinPass)   
 Пример использования
 ```sh
-python3 -m case.template_genarate_word
+python3 -m tests.test_genarate_word
 ```
 
 ## OSINT
 Набор модулей для информационной разведки из открытых источников.  
 Проверка долгов по ИНН. Пример
 ```
-python3 -m case.template_search_debt
+python3 -m tests.test_search_debt
 ```
 
 ## Web
 Модуль whois относится к OSINT.   
 Пример использования
 ```sh
-python3 -m case.template_whois.py
+python3 -m tests.test_whois.py
 ```
 
 ## Scanners
@@ -53,6 +53,6 @@ python3 -m case.template_whois.py
 - Сканнер портов - простейший прототип. Не брать во внимание
 - Сканнер плагинов WordPress - рабочий инструмент, нужно пополнять библиотеку плагинов, что бы инструмент по ним искал. Пример использования
 ```sh
-python3 -m case.template_scanner_plugin
+python3 -m tests.test_scanner_plugin
 ```
 Для него нужен файл с плагинами plugins.txt и agent.json(опционально) для улучшения запросов
