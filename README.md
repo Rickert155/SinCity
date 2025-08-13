@@ -40,12 +40,20 @@ python3 -m tests.test_genarate_word
 ```
 python3 -m tests.test_search_debt
 ```
+Так же можно вызвать инструмент таким образом
+```sh
+python3 SinCity/OSINT/debt.py
+```
 
 ## Web
 Модуль whois относится к OSINT.   
 Пример использования
 ```sh
 python3 -m tests.test_whois.py
+```
+Так же можно вызвать инструмент таким образом
+```sh
+python3 -m SinCity.Web.whois
 ```
 
 ## Scanners
