@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 cp -r SinCity ../Sin
-cp -r case ../case
+cp -r tests ../tests
 cp -r tmp ../tmp
 cp __init__.py ../
 cp requirements.txt ../requirements.txt
