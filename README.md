@@ -36,14 +36,6 @@ python3 -m tests.test_genarate_word
 
 ## OSINT
 Набор модулей для информационной разведки из открытых источников.  
-Проверка долгов по ИНН. Пример
-```
-python3 -m tests.test_search_debt
-```
-Так же можно вызвать инструмент таким образом
-```sh
-python3 SinCity/OSINT/debt.py
-```
 
 ## Web
 Модуль whois относится к OSINT.   
